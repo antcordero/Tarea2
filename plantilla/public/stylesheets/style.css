@@ -1,10 +1,9 @@
 body {
-
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-color: #f5f5f5;
 }
 
-#section1 {
+main {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 10px;
@@ -12,9 +11,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 80%;
   margin: auto;
+  padding: 2rem;
 }
+
+/******************** SECCIÓN 1 - GALERÍA**/
 
 .container {
   display: grid;
@@ -38,3 +41,37 @@ body {
 #imagenes-secundarias img {
   width: 92px;
 }
+
+/******************** SECCIÓN 2 - DESCRIPTION **/
+#section2 {
+  margin: 20px 5px 20px 5px;
+}
+
+#description-info {
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+
+/******************** SECCIÓN 3 - CARDS **/
+#cards-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .card {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fafafa;
+    padding: 10px;
+  
+    p {
+      font-style: italic;
+    }
+  }
+}
+
